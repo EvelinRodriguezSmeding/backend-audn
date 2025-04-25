@@ -44,3 +44,8 @@ app.get("/api/*", (req, res) => {
 app.listen(port, () => {
   console.log(`Servidor levantado y escuchando el puerto ${port}`);
 });
+
+
+app.get("/", (req, res) => {
+  res.send("Backend funcionando correctamente 💻✨");
+});
