@@ -21,20 +21,11 @@ require("dotenv").config();
 
 app.use(
   cors({
-    origin: [process.env.FRONTEND_URL, "http://localhost:5173"],
+    origin: ["https://frontend-audn.vercel.app", "http://localhost:5173"],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
 );
-
-// Add this middleware to enable CORS
-app.use((req, res, next) => {
-  res.setHeader('Access-Control-Allow-Origin', 'https://frontend-audn.vercel.app'); 
-  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
-  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization'); // Add the headers you need
-  next();
-});
-
 
 app.use("/api", canciones);
 app.use("/api", buscador);
