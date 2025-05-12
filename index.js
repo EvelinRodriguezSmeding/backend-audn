@@ -17,6 +17,8 @@ app.use(morgan("dev"));
 
 app.use(express.json());
 
+require("dotenv").config();
+
 app.use(
   cors({
     origin: [process.env.FRONTEND_URL, "http://localhost:5173"],
@@ -25,7 +27,6 @@ app.use(
   })
 );
 
-require("dotenv").config();
 
 app.use("/api", canciones);
 app.use("/api", buscador);
