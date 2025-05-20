@@ -1,7 +1,7 @@
 const { check } = require("express-validator");
 
 const datosRegister = [
-  check("user_email")
+  check("email")
     .notEmpty()
     .withMessage("El email es un campo requerido")
     .isEmail()
