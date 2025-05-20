@@ -52,12 +52,13 @@ const register = async (req, res) => {
       user_id: userId,
     });
   } catch (error) {
-    console.error(error);
+    console.error("Error en register:", error);
     res
       .status(500)
       .json({
         error: "Ocurrió un error al registrar el usuario",
         detalle: error.message,
+        stack: error.stack,
       });
   }
 };

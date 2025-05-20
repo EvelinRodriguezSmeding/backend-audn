@@ -5,8 +5,7 @@ const cors = require("cors");
 
 const canciones = require("./routes/canciones");
 const buscador = require("./routes/buscador");
-const authRoute = require("./routes/authroute");
-const loginRoute = require("./routes/loginAuthRoutes");
+const authRoutes = require("./routes/authRoutes");
 const usuarios = require("./routes/usuarios");
 const playlists = require("./routes/playlists");
 
@@ -31,8 +30,7 @@ app.use("/api", canciones);
 app.use("/api", buscador);
 app.use("/api", usuarios);
 app.use("/api", playlists);
-app.use("/api/auth", authRoute);
-app.use("/api/auth", loginRoute);
+app.use("/api/auth", authRoutes);
 
 app.get("/api/*", (req, res) => {
   res.status(404).json({
