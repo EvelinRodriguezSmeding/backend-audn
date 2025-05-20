@@ -1,6 +1,4 @@
 require('dotenv').config();
-/* const knex = require('knex')(knexConfig); */
-const knex = require('knex')(knexConfig);
 
 /* const knexConfig = {
   client: 'pg',
@@ -31,7 +29,7 @@ const knexConfig = {
 
 };
 
-
+const knex = require('knex')(knexConfig);
 
 module.exports = knex;
 
