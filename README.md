@@ -74,9 +74,9 @@ Repo del frontend: https://github.com/EvelinRodriguezSmeding/frontend-audn
 
 Puedes probar la app directamente desde el frontend desplegado:
 
-🔗 Frontend: https://frontend-audn.vercel.app
-
-🌐 Backend (Supabase): conectado automáticamente al frontend
+🔗 **Frontend:** https://frontend-audn.vercel.app  
+🌐 **Backend API (Node.js + Express):** https://backend-audn.onrender.com  
+🛢️ **Base de datos (Supabase):** conectada automáticamente al backend en producción
 
 ### 📝 Notas
 
