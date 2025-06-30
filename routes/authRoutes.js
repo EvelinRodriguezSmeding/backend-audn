@@ -2,7 +2,7 @@ const express = require("express");
 const { datosRegister } = require("../middlewares/validators/registerValidator");
 const { datosLogIn } = require("../middlewares/validators/loginValidator");
 const { runValidation } = require("../middlewares/validators/indexValidator");
-const { register } = require("../controllers/authControllers");
+const { register } = require("../controllers/registerController");
 const { login } = require("../controllers/loginController");
 
 const router = express.Router();

@@ -1,92 +1,85 @@
 # audn Backend
 
-## Descripción
+API REST para Audn, una aplicación web que genera playlists personalizadas según tus preferencias musicales. Desarrollado con Node.js, Express, PostgreSQL y JWT para autenticación.
 
-Backend de Audn, una app web que genera playlists personalizadas según las preferencias del usuario. Desarrollado con **Node.js + Express** y **PostgreSQL** , incluye autenticación con JWT, manejo de usuarios, canciones y playlists. Expone una API REST con rutas protegidas y validadas mediante middlewares.
-
-Este proyecto fue parte del **Bootcamp de Full Stack Web Development** de Senpai Academy.
+Proyecto creado como parte del Bootcamp Full Stack Web Development de Senpai Academy.
 
 ## Tecnologías
 
 - Node.js
 - Express
 - PostgreSQL
-- JWT (JSON Web Tokens) para autenticación
+- JWT (autenticación)
 
-## Instalación
+## 📦 Requisitos
+
+### (solo si lo ejecutas localmente)
+
+- Node.js
+- PostgreSQL
+- npm o yarn
+
+## Instalación (modo desarrollo)
 
 1. Clona el repositorio:
 
    ```bash
    git clone https://github.com/EvelinRodriguezSmeding/backend-audn.git
-
-   ```
-
-2. Entra al directorio del proyecto:
-
-   ```bash
    cd backend-audn
-
    ```
 
-3. Instala las dependendicas:
+2. Instala las dependendicas:
 
    ```bash
    npm install
 
    ```
 
-4. Crea una carpeta config y dentro un archivo knexfile.js con el siguiente contenido:
+3. Crea un archivo .env
 
-   ```require("dotenv").config();
+   En la raíz de tu proyecto crea el archivo con las siguientes variables de entorno (ajusta los valores según tu configuración).
 
-    const connection = process.env.DATABASE_URL
-    ? `${process.env.DATABASE_URL}?sslmode=require`
-    : {
-    host: process.env.DB_HOST || 'localhost',
-    user: process.env.DB_USER || 'nombre_usuario_db',
-    password: process.env.DB_PASSWORD || 'contraseña_de_tu_db',
-    database: process.env.DB_DATABASE || 'nombre_de_tu_db',
-    };
-
-    const knex = require("knex")({
-    client: "pg",
-    connection,
-    });
-
-    module.exports = knex;
-   ```
-
-5. Crea un archivo .env en la raíz de tu proyecto con las siguientes variables de entorno (ajustá los valores según tu configuración local):
    Ejemplo de archivo .env:
 
    ```env
+   #Local
    DB_HOST=localhost
-   DB_USER=nombre_usuario_db
-   DB_PASSWORD=tu_contraseña
+   DB_USER=nombre_usuario_bd
+   DB_PASSWORD=contraseña_bd
    DB_DATABASE=nombre_de_tu_bd
 
-   ### Si usas Supabase la variable DATABASE_URL se proporcionará automáticamente
-   DATABASE_URL=tu_url_de_base_de_datos_proporcionada_por_supabase
+   #Supabase(opcional)
+   DATABASE_URL=url_de_base_de_datos_proporcionada_por_supabase
 
    JWT_SECRET=tu_clave_secreta
    FRONTEND_URL=https://frontend-audn.vercel.app/
 
    ```
 
-**Notes**: _DATABASE_URL_ es proporcionada por supabase
+4. Configurar la base de datos (solo para uso local)
 
-6. 📄 Importante: Antes de ejecutar el proyecto, asegurate de haber creado la base de datos y las tablas necesarias.
-   Copiá y ejecutá el script SQL que se encuentra en el archivo sqlscript.sql, utilizando pgAdmin o alguna terminal de PostgreSQL.
+   Ejecuta el script **sqlscript.sql** desde pgAdmin u otra herramienta para crear las tablas necesarias.
 
-## Ejecutar el Proyecto
+5. Ejecutar el Servidor
 
-```bash
-npm start
-```
+   ```bash
+   npm start
+   ```
 
-Esto levantará el servidor de la API en el puerto configurado (por defecto, 8000).
+   Por defecto corre en: http://localhost:8000
 
-### Notas
+## ✅ Versión en producción
 
-Asegúrate de tener PostgreSQL corriendo y configurado con las credenciales correctas en el archivo .env.
+Puedes probar la app directamente desde el frontend desplegado:
+
+🔗 Frontend: https://frontend-audn.vercel.app
+
+🌐 Backend (Supabase): conectado automáticamente al frontend
+
+### 📝 Notas
+
+Si solo quieres ver la app funcionando, no necesitas instalar nada ni crear una base de datos local.
+
+Las rutas protegidas requieren autenticación con JWT.
+
+El backend tiene configurado CORS para permitir solicitudes desde el frontend en Vercel.
