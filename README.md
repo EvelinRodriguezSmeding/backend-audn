@@ -73,7 +73,9 @@ Repo del frontend: https://github.com/EvelinRodriguezSmeding/frontend-audn
 ## ✅ Versión en producción
 
 🔗 **Frontend:** https://frontend-audn.vercel.app
+
 🌐 **Backend API:** https://backend-audn.onrender.com
+
 🛢️ **Base de datos:** alojada en Supabase
 
 ### 📝 Notas
