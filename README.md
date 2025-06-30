@@ -4,7 +4,7 @@ API REST para Audn, una app web que genera playlists personalizadas según las p
 
 Proyecto creado como parte del **Bootcamp Full Stack Web Development** de Senpai Academy.
 
-Repo del frontend: https://github.com/EvelinRodriguezSmeding/frontend-audn
+🔗 Repo del frontend: https://github.com/EvelinRodriguezSmeding/frontend-audn
 
 ## 🧩Tecnologías
 
