@@ -62,7 +62,7 @@ Proyecto creado como parte del **Bootcamp Full Stack Web Development** de Senpai
 
    Ejecuta el script **sqlscript.sql** desde pgAdmin u otra herramienta para crear las tablas necesarias.
 
-5. Ejecutar el Servidor
+5. Ejecuta el Servidor
 
    ```bash
    npm start
