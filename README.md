@@ -1,8 +1,8 @@
 # audn Backend
 
-API REST para Audn, una aplicación web que genera playlists personalizadas según tus preferencias musicales. Desarrollado con Node.js, Express, PostgreSQL y JWT para autenticación.
+API REST para Audn, una app web que genera playlists personalizadas según las preferencias del usuario.
 
-Proyecto creado como parte del Bootcamp Full Stack Web Development de Senpai Academy.
+Proyecto creado como parte del **Bootcamp Full Stack Web Development** de Senpai Academy.
 
 ## Tecnologías
 
