@@ -58,7 +58,7 @@ Proyecto creado como parte del **Bootcamp Full Stack Web Development** de Senpai
 
    ```
 
-4. Configurar la base de datos (solo para uso local)
+4. Configura la base de datos (solo para uso local)
 
    Ejecuta el script **sqlscript.sql** desde pgAdmin u otra herramienta para crear las tablas necesarias.
 
