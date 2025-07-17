@@ -78,6 +78,12 @@ Proyecto creado como parte del **Bootcamp Full Stack Web Development** de Senpai
 
 🛢️ **Base de datos:** alojada en Supabase
 
+## 🔗 Repositorio Original
+
+Este proyecto fue desarrollado como parte del **Bootcamp de Full Stack Web Development de Senpai Academy**. Puedes ver el **repositorio original** aquí:
+
+👉 [Repositorio original del proyecto](https://github.com/gnzf/ProyectoFinalBack)
+
 ### 📝 Notas
 
 Si solo quieres ver la app funcionando, no necesitas instalar nada ni crear una base de datos local.
